@@ -1,4 +1,4 @@
-# 🎮 Soon Soon Link
+# 🎮 塊塊連看看Soon Soon Link
 
 👉 Demo: https://nickhuang1121.github.io/soon-soon-link/
 
