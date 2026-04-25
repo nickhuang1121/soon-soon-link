@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    overflow: hidden;
+    background: #5a2ccd;
+    z-index: 1;
+}
+
+.app {
+
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+    height: 800px;
+    overflow: hidden;
+    background: #5a2ccd;
+}
+
+button {
+    border: 0;
+    font: inherit;
+    cursor: pointer;
+    background: transparent;
+}
+
+img {
+    display: block;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #fff200;
+    outline-offset: 4px;
+}
+
+#playerLevelProcess,
+#welcome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+#loadingCover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: white;
+    z-index: 100;
+}
+
+#loadingCover.hide {
+    display: none;
+}
+
+#loadingCover p {
+    margin-top: 30px;
+    font: 700 30px/1 "微軟正黑體";
+    color: #e90052;
+    animation-name: start;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+#welcome {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    z-index: 20;
+
+}
+
+#welcomeBG {
+    position: relative;
+    margin: 0 auto;
+    max-width: 500px;
+    height: 100%;
+    background: url(../images/welcome.jpg) top center;
+    background-size: cover;
+}
+
+.welcomeBG_aniTop,
+.welcomeBG_aniBottom {
+    transform: scale(1);
+    position: absolute;
+    top: -22%;
+    left: 0;
+    width: 200%;
+    display: flex;
+    flex-wrap: nowrap;
+    animation-name: aniTop;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.welcomeBG_aniBottom {
+
+    top: 50%;
+    animation-name: aniBottom;
+}
+
+@keyframes aniTop {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes aniBottom {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+.welcomeBG_aniTop img,
+.welcomeBG_aniBottom img {
+    width: 50%;
+}
+
+.welcomeBG_aniBottom img {
+    transform: scaleX(-1);
+}
+
+.welcome_inner {
+    display: block;
+    padding-top: 80%;
+    width: 100%;
+}
+
+.welcome_inner button {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    width: 200px;
+    font: 900 30px/1 "微軟正黑體";
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0 3px black;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    background: linear-gradient(180deg, #e90052, #ac003c);
+    box-shadow: 0 10px #55001e;
+    animation-name: start;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes start {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+#welcome.hide {
+    display: none;
+}
+
+#playerLevelProcess {
+    display: block;
+    z-index: 5;
+
+}
+
+.playerLevelProcessBG {
+    margin: 0 auto;
+    height: 100%;
+    max-width: 500px;
+    overflow-y: scroll;
+}
+
+#playerLevelProcess.hide {
+    display: none;
+}
+
+.playerLevelProcess_inner {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100%;
+    overflow: scroll;
+    color: bisque;
+    background: linear-gradient(0deg, #248ceb, #5a2ccd);
+}
+
+#levelSelect {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 320px;
+}
+
+#levelSelect li {
+    padding: 15%;
+    list-style: none;
+
+}
+
+#levelSelect li img {
+    width: 100%;
+}
+
+#levelSelect .levelSelect_star {
+    margin-top: -10%;
+}
+
+#levelSelect .levelSelect_button {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#time {
+    display: block;
+    padding: 5px 0;
+    width: 100%;
+
+    pointer-events: none;
+    z-index: 30;
+
+}
+
+#time p {
+    font-size: 20px;
+    color: white;
+}
+
+#time p span {
+    font-size: 1.3em;
+    color: #fff200;
+}
+
+#time p {
+    text-align: center;
+}
+
+.dev-clear-data {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 60;
+    padding: 8px;
+    color: antiquewhite;
+    font-size: 12px;
+    opacity: 0;
+}
+
+.dev-clear-data:focus-visible {
+    opacity: 1;
+}
+
+#audio {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+
+    z-index: 50;
+}
+
+#audioButton {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+}
+
+#audioButton img {
+    width: 100%;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+#welcomeAudio {
+    display: none;
+}
+
+#preload.hide {
+    display: none;
+}

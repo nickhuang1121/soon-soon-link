@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#5a2ccd">
+    <title>塊塊連看看</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="app">
+
+        <div id="welcome">
+            <div id="welcomeBG">
+                <div class="welcomeBG_aniTop">
+                    <img src="images/ani-welcome-top.png" alt="">
+                    <img src="images/ani-welcome-top.png" alt="">
+                </div>
+                <div class="welcomeBG_aniBottom">
+                    <img src="images/ani-welcome-top.png" alt="">
+                    <img src="images/ani-welcome-top.png" alt="">
+                </div>
+                <div class="welcome_inner">
+                    <button type="button" id="startGame">開始遊戲</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="audio">
+            <button type="button" id="audioButton" aria-label="播放或暫停音樂">
+                <img src="images/audio-play.png" alt="">
+            </button>
+        </div>
+
+        <article id="playerLevelProcess" aria-label="關卡選擇">
+            <div class="playerLevelProcessBG">
+                <div class="playerLevelProcess_inner">
+                    <ul id="levelSelect">
+                        <li>
+                            <div class="levelSelect_level"><img src="images/level-1.png" alt=""></div>
+                            <div class="levelSelect_star"><img src="images/star-0.png" alt=""></div>
+                            <div class="levelSelect_button">
+                                <a href="#" aria-label="第 1 關">
+                                    <img src="images/button-clear.png" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="levelSelect_level"><img src="images/level-2.png" alt=""></div>
+                            <div class="levelSelect_star"><img src="images/star-1.png" alt=""></div>
+                            <div class="levelSelect_button">
+                                <a href="#" aria-label="第 2 關">
+                                    <img src="images/button-clear.png" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="levelSelect_level"><img src="images/level-3.png" alt=""></div>
+                            <div class="levelSelect_star"><img src="images/star-2.png" alt=""></div>
+                            <div class="levelSelect_button">
+                                <a href="#" aria-label="第 3 關">
+                                    <img src="images/button-play.png" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="levelSelect_level"><img src="images/level-4.png" alt=""></div>
+                            <div class="levelSelect_star"><img src="images/star-3.png" alt=""></div>
+                            <div class="levelSelect_button">
+                                <a href="#" aria-label="第 4 關">
+                                    <img src="images/button-no.png" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="levelSelect_level"><img src="images/level-5.png" alt=""></div>
+                            <div class="levelSelect_star"><img src="images/star-0.png" alt=""></div>
+                            <div class="levelSelect_button"><a href="#" aria-label="第 5 關">
+                                    <img src="images/button-no.png" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="levelSelect_level"><img src="images/level-6.png" alt=""></div>
+                            <div class="levelSelect_star"><img src="images/star-0.png" alt=""></div>
+                            <div class="levelSelect_button"><a href="#" aria-label="第 6 關">
+                                    <img src="images/button-no.png" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="levelSelect_level"><img src="images/level-7.png" alt=""></div>
+                            <div class="levelSelect_star"><img src="images/star-0.png" alt=""></div>
+                            <div class="levelSelect_button"><a href="#" aria-label="第 7 關">
+                                    <img src="images/button-no.png" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="levelSelect_level"><img src="images/level-8.png" alt=""></div>
+                            <div class="levelSelect_star"><img src="images/star-0.png" alt=""></div>
+                            <div class="levelSelect_button"><a href="#" aria-label="第 8 關">
+                                    <img src="images/button-no.png" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="levelSelect_level"><img src="images/level-9.png" alt=""></div>
+                            <div class="levelSelect_star"><img src="images/star-0.png" alt=""></div>
+                            <div class="levelSelect_button"><a href="#" aria-label="第 9 關">
+                                    <img src="images/button-no.png" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="levelSelect_level"><img src="images/level-10.png" alt=""></div>
+                            <div class="levelSelect_star"><img src="images/star-0.png" alt=""></div>
+                            <div class="levelSelect_button"><a href="#" aria-label="第 10 關">
+                                    <img src="images/button-no.png" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="levelSelect_level"><img src="images/level-11.png" alt=""></div>
+                            <div class="levelSelect_star"><img src="images/star-0.png" alt=""></div>
+                            <div class="levelSelect_button"><a href="#" aria-label="第 11 關">
+                                    <img src="images/button-no.png" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="levelSelect_level"><img src="images/level-12.png" alt=""></div>
+                            <div class="levelSelect_star"><img src="images/star-0.png" alt=""></div>
+                            <div class="levelSelect_button"><a href="#" aria-label="第 12 關">
+                                    <img src="images/button-no.png" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="levelSelect_level"><img src="images/level-13.png" alt=""></div>
+                            <div class="levelSelect_star"><img src="images/star-0.png" alt=""></div>
+                            <div class="levelSelect_button"><a href="#" aria-label="第 13 關">
+                                    <img src="images/button-no.png" alt="">
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <canvas id="canvas" aria-label="遊戲棋盤"></canvas>
+
+        <article id="time">
+            <p>倒數<span id="clock">99</span>秒</p>
+        </article>
+
+        <button type="button" class="dev-clear-data" id="clearDataButton">清除所有進度(開發用)</button>
+
+        <audio src="audio/welcome.m4a" id="welcomeAudio" playsinline loop></audio>
+
+        <div id="preload">
+            <img src="images/block_num0.png" alt="">
+            <img src="images/block_num1.png" alt="">
+            <img src="images/block_num2.png" alt="">
+            <img src="images/block_num9.png" alt="">
+        </div>
+
+        <div id="loadingCover">
+            <img src="images/loadinglogo.gif" alt="">
+            <p>載入中....</p>
+        </div>
+    </div>
+    <script src="js/js.js"></script>
+</body>
+
+</html>
